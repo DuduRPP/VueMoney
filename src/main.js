@@ -4,6 +4,12 @@ import { createApp } from 'vue'
 import Toast from 'vue-toastification'
 import 'vue-toastification/dist/index.css'
 
+//vuetify
+import 'vuetify/styles'
+import { createVuetify } from 'vuetify'
+import * as components from 'vuetify/components'
+import * as directives from 'vuetify/directives'
+
 import App from './App.vue'
 import router from './router'
 
@@ -36,7 +42,13 @@ const options = {
   // You can set your default options here
 }
 
+const vuetify = createVuetify({
+    components,
+    directives
+})
+
 app.use(Toast, options)
+app.use(vuetify)
 app.use(router)
 
 app.mount('#app')
