@@ -34,6 +34,14 @@ const signInAsGuest = () => {
 </script>
 
 <template>
-  <button @click="signInWithGoogle">Sign In With Google</button>
-  <button @click="signInAsGuest">Sign In As a Guest</button>
+  <section class="login">
+    <h2><span class="vue-word">Vue</span>Money</h2>
+    <h3>Login:</h3>
+    <v-btn @click="signInWithGoogle" prepend-icon="mdi-google" rounded-lg>
+      Sign In With Google
+    </v-btn>
+    <v-btn @click="signInAsGuest" prepend-icon="mdi-account-clock" rounded-lg>
+      Sign In As Guest
+    </v-btn>
+  </section>
 </template>

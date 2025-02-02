@@ -1,3 +1,3 @@
 <template>
-  <h2>VueMoney</h2>
+  <h2><span class="vue-word">Vue</span>Money</h2>
 </template>
